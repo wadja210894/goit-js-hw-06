@@ -13,7 +13,12 @@ destroyeBtn.addEventListener("click", onBtnDestroyClickHandler);
 
 
 function onBtnCreateClickHandler() {
-  createBoxes(inputEl.value);
+  
+  if (inputEl.value >= 100) {
+    alert('Введено завелике число, введіть число до 100');
+  } else {
+    createBoxes(inputEl.value);
+  };
 }
 
 function onBtnDestroyClickHandler() {
@@ -21,6 +26,7 @@ function onBtnDestroyClickHandler() {
 }
 
 function createBoxes(amount) {
+  boxes.innerHTML = '';
   let arrayDiv = [];
 
   for (let i = 1; i <= amount; i += 1) {
