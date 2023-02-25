@@ -8,7 +8,6 @@ const destroyeBtn = document.querySelector('button[data-destroy]');
 const boxes = document.querySelector('div#boxes');
 
 
-
 createBtn.addEventListener("click", onBtnCreateClickHandler);
 destroyeBtn.addEventListener("click", onBtnDestroyClickHandler);
 
